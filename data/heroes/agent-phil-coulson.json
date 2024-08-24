@@ -1,0 +1,10 @@
+{
+    "name": "Agent Phil Coulson",
+    "team": "Shield",
+    "classes": {"covert": 11, "tech": 3},
+    "mechanical-tags": [{"class-covert": 11}, {"class-tech": 3}, {"shield-level": 9}, {"team-shield": 14}],
+    "synergy-tags": ["shield-level", "class-covert"],
+    "thematic-tags": ["shield", "avengers", "spies"],
+    "purchasing-power": 0,
+    "attacking-power": 14
+}
