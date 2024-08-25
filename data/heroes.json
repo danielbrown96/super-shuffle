@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Black Widow",
+        "team": "Avengers",
+        "set": "Core",
+        "classes": {"covert": 9, "tech": 5},
+        "mechanical-tags": [{"bystanders": 11}, {"card-draw": 5}],
+        "synergy-tags": [{"class-tech": 5},{"class-covert": 5},{"bystanders": 3}],
+        "thematic-tags": ["avengers", "spies", "russians", "shield"],
+        "ability-tags": ["martial", "guns"],
+        "purchasing-power": 0,
+        "attacking-power": 9
+    },
+    {
+        "name": "Captain America",
+        "team": "Avengers",
+        "set": "Core",
+        "classes": {"instinct": 5, "strength": 5, "tech": 3, "covert": 1},
+        "mechanical-tags": [{"protection": 5}],
+        "synergy-tags": [{"team-avengers": 1}, {"colors": 10}, {"class-instinct": 5}, {"class-strength": 5}, {"class-covert": 10}, {"class-ranged": 10}, {"class-tech": 10}],
+        "thematic-tags": ["avengers", "military", "shield"],
+        "ability-tags": ["super-strength"],
+        "purchasing-power": 5,
+        "attacking-power": 9
+    }
+]
