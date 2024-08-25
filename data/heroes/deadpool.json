@@ -1,0 +1,12 @@
+{
+    "name": "Deadpool",
+    "team": "",
+    "set": "Core",
+    "classes": {"tech": 5, "covert": 5, "instinct": 4},
+    "mechanical-tags": [{"bystander": 5}, {"discard": 3}, {"card-draw": 3}],
+    "synergy-tags": [],
+    "thematic-tags": ["deadpool", "deadpool-and-wolverine", "mutant", "mercenary", "x-force"],
+    "ability-tags": ["guns"],
+    "purchasing-power": 0,
+    "attacking-power": 0
+}

@@ -1,0 +1,12 @@
+{
+    "name": "Cyclops",
+    "team": "X-men",
+    "set": "Core",
+    "classes": {"strength": 5, "range": 9},
+    "mechanical-tags": [{"discard": 10}],
+    "synergy-tags": [{"discard": 5}, {"team-xmen": 1}],
+    "thematic-tags": ["xmen", "og-xmen", "mutant", "summers-family"],
+    "ability-tags": ["blaster", "lasers", "energy-controller"],
+    "purchasing-power": 5,
+    "attacking-power": 9
+}

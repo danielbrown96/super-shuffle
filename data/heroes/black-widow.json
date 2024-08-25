@@ -1,0 +1,12 @@
+{
+    "name": "Black Widow",
+    "team": "Avengers",
+    "set": "Core",
+    "classes": {"covert": 9, "tech": 5},
+    "mechanical-tags": [{"bystanders": 11}, {"card-draw": 5}],
+    "synergy-tags": [{"class-tech": 5},{"class-covert": 5},{"bystanders": 3}],
+    "thematic-tags": ["avengers", "spies", "russians", "shield"],
+    "ability-tags": ["martial", "guns"],
+    "purchasing-power": 0,
+    "attacking-power": 9
+}
