@@ -40,7 +40,7 @@
     "team": "",
     "set": "Core",
     "classes": {"tech": 5, "covert": 5, "instinct": 4},
-    "mechanical-tags": [{"bystander": 5}, {"discard": 3}, {"card-draw": 3}],
+    "mechanical-tags": [{"bystanders": 5}, {"discard": 3}, {"card-draw": 3}],
     "synergy-tags": [],
     "thematic-tags": ["deadpool", "deadpool-and-wolverine", "mutant", "mercenary", "x-force"],
     "ability-tags": ["guns"],
@@ -52,11 +52,23 @@
     "team": "X-Men",
     "set": "Core",
     "classes": {"range": 5, "covert": 5, "instinct": 3, "strength": 1},
-    "mechanical-tags": [{"tag-name": 0}],
-    "synergy-tags": [{"tag-name": 0}],
-    "thematic-tags": [""],
-    "ability-tags": [],
-    "purchasing-power": 0,
-    "attacking-power": 0
+    "mechanical-tags": [{"card-draw": 5}, {"villain-deck-manipulation": 5}],
+    "synergy-tags": [{"class-covert": 5}, {"team-xmen": 3}],
+    "thematic-tags": ["xmen", "hellfire-club", "villain-and-hero", "mutant", "hellions"],
+    "ability-tags": ["telepath"],
+    "purchasing-power": 5,
+    "attacking-power": 9
+    },
+    {
+        "name": "Gambit",
+        "team": "X-Men",
+        "set": "Core",
+        "classes": {"covert": 5, "range": 5, "instinct": 4},
+        "mechanical-tags": [{"card-draw": 13, "deck-manipulation": 5}],
+        "synergy-tags": [{"class-instinct": 3, "deck-manipulation": 9}],
+        "thematic-tags": ["xmen", "mutant", "thief"],
+        "ability-tags": ["energy-controller", "martial"],
+        "purchasing-power": 3,
+        "attacking-power": 6
     }
 ]

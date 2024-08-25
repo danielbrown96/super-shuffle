@@ -1,127 +1,182 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "array",
-  "items": {
-    "type": "object",
-    "properties": {
-      "name": {
-        "type": "string"
-      },
-      "team": {
-        "type": "string",
-        "enum": [
-          "X-Men",
-          "Avengers",
-          "Shield",
-          ""
-        ]
-      },
-      "set": {
-        "type": "string",
-        "enum": [
-          "Core"
-        ]
-      },
-      "classes": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "items": {
         "type": "object",
         "properties": {
-          "strength": {
-            "type": "integer",
-            "minimum": 1,
-            "maximum": 14
-          },
-          "range": {
-            "type": "integer",
-            "minimum": 1,
-            "maximum": 14
-          },
-          "instinct": {
-            "type": "integer",
-            "minimum": 1,
-            "maximum": 14
-          },
-          "covert": {
-            "type": "integer",
-            "minimum": 1,
-            "maximum": 14
-          },
-          "tech": {
-            "type": "integer",
-            "minimum": 1,
-            "maximum": 14
-          }
-        }
-      },
-      "mechanical-tags": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "discard": {
-              "type": "integer"
-            }
-          }
-        }
-      },
-      "synergy-tags": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "discard": {
-              "type": "integer"
+            "name": {
+                "type": "string"
             },
-            "team-xmen": {
-              "type": "integer"
+            "team": {
+                "type": "string",
+                "enum": [
+                    "X-Men",
+                    "Avengers",
+                    "Shield",
+                    ""
+                ]
+            },
+            "set": {
+                "type": "string",
+                "enum": [
+                    "Core"
+                ]
+            },
+            "classes": {
+                "type": "object",
+                "properties": {
+                    "strength": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 14
+                    },
+                    "range": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 14
+                    },
+                    "instinct": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 14
+                    },
+                    "covert": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 14
+                    },
+                    "tech": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 14
+                    }
+                }
+            },
+            "mechanical-tags": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "discard": {
+                            "type": "integer"
+                        },
+                        "card-draw": {
+                            "type": "integer"
+                        },
+                        "bystanders": {
+                            "type": "integer"
+                        },
+                        "protection": {
+                            "type": "integer"
+                        },
+                        "deck-manipulation": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            },
+            "synergy-tags": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "discard": {
+                            "type": "integer"
+                        },
+                        "team-xmen": {
+                            "type": "integer"
+                        },
+                        "team-avengers": {
+                            "type": "integer"
+                        },
+                        "class-strength": {
+                            "type": "integer"
+                        },
+                        "class-tech": {
+                            "type": "integer"
+                        },
+                        "colors": {
+                            "type": "integer"
+                        },
+                        "bystanders": {
+                            "type": "integer"
+                        },
+                        "class-ranged": {
+                            "type": "integer"
+                        },
+                        "class-covert": {
+                            "type": "integer"
+                        },
+                        "class-instinct": {
+                            "type": "integer"
+                        },
+                        "deck-manipulation": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            },
+            "thematic-tags": {
+                "type": "array",
+                "items": {
+                    "type": "string",
+                    "enum": [
+                        "xmen",
+                        "og-xmen",
+                        "mutant",
+                        "summers-family",
+                        "x-force",
+                        "deadpool",
+                        "deadpool-and-wolverine",
+                        "military",
+                        "shield",
+                        "mercenary",
+                        "russians",
+                        "avengers",
+                        "spies",
+                        "hellions",
+                        "villain-and-hero",
+                        "thief",
+                        "hellfire-club"
+                    ]
+                }
+            },
+            "ability-tags": {
+                "type": "array",
+                "items": {
+                    "type": "string",
+                    "enum": [
+                        "blaster",
+                        "lasers",
+                        "energy-controller",
+                        "telepath",
+                        "telekinesis",
+                        "super-strength",
+                        "guns",
+                        "martial"
+                    ]
+                }
+            },
+            "purchasing-power": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 14
+            },
+            "attacking-power": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 14
             }
-          }
-        }
-      },
-      "thematic-tags": {
-        "type": "array",
-        "items": {
-          "type": "string",
-          "enum": [
-            "xmen",
-            "og-xmen",
-            "mutant",
-            "summers-family"
-          ]
-        }
-      },
-      "ability-tags": {
-        "type": "array",
-        "items": {
-          "type": "string",
-          "enum": [
-            "blaster",
-            "lasers",
-            "energy-controller",
-            "telepath",
-            "telekinesis"
-          ]
-        }
-      },
-      "purchasing-power": {
-        "type": "integer",
-        "minimum": 0,
-        "maximum": 14
-      },
-      "attacking-power": {
-        "type": "integer",
-        "minimum": 0,
-        "maximum": 14
-      }
-    },
-    "required": [
-      "name",
-      "classes",
-      "mechanical-tags",
-      "synergy-tags",
-      "thematic-tags",
-      "ability-tags",
-      "purchasing-power",
-      "attacking-power"
-    ]
-  }
+        },
+        "required": [
+            "name",
+            "classes",
+            "mechanical-tags",
+            "synergy-tags",
+            "thematic-tags",
+            "ability-tags",
+            "purchasing-power",
+            "attacking-power"
+        ]
+    }
 }
