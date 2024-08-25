@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -18,12 +20,11 @@
   "bugs": {
     "url": "https://github.com/danielbrown96/super-shuffle/issues"
   },
-  "homepage": "https://github.com/danielbrown96/super-shuffle#readme",
+  "homepage": "https://danielbrown96.github.io/super-shuffle",
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "html-webpack-plugin": "^5.6.0",
-    "webpack": "^5.94.0"
-  },
-  "dependencies": {
+    "webpack": "^5.94.0",
     "webpack-cli": "^5.1.4"
   }
 }
