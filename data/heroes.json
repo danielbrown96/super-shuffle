@@ -22,5 +22,41 @@
         "ability-tags": ["super-strength"],
         "purchasing-power": 5,
         "attacking-power": 9
+    },
+    {
+    "name": "Cyclops",
+    "team": "X-Men",
+    "set": "Core",
+    "classes": {"strength": 5, "range": 9},
+    "mechanical-tags": [{"discard": 10}],
+    "synergy-tags": [{"discard": 5}, {"team-xmen": 1}],
+    "thematic-tags": ["xmen", "og-xmen", "mutant", "summers-family"],
+    "ability-tags": ["blaster", "lasers", "energy-controller"],
+    "purchasing-power": 5,
+    "attacking-power": 9
+    },
+    {
+    "name": "Deadpool",
+    "team": "",
+    "set": "Core",
+    "classes": {"tech": 5, "covert": 5, "instinct": 4},
+    "mechanical-tags": [{"bystander": 5}, {"discard": 3}, {"card-draw": 3}],
+    "synergy-tags": [],
+    "thematic-tags": ["deadpool", "deadpool-and-wolverine", "mutant", "mercenary", "x-force"],
+    "ability-tags": ["guns"],
+    "purchasing-power": 0,
+    "attacking-power": 0
+    },
+    {
+    "name": "Emma Frost",
+    "team": "X-Men",
+    "set": "Core",
+    "classes": {"range": 5, "covert": 5, "instinct": 3, "strength": 1},
+    "mechanical-tags": [{"tag-name": 0}],
+    "synergy-tags": [{"tag-name": 0}],
+    "thematic-tags": [""],
+    "ability-tags": [],
+    "purchasing-power": 0,
+    "attacking-power": 0
     }
 ]
