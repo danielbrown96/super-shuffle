@@ -1,42 +1,17 @@
-import { test } from './functions/test.js';
-import heroes from '../data/heroes.json';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-$(document).ready(function(){
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
-    // jQuery methods go here...
-    console.log("Ready!");
-
-    //console.log(heroes);
-
-    $.state = {
-        cards: {
-            heroes
-        },
-        generationState: {
-            foundHeroes: [],
-            availableHeroes: heroes
-        }
-    };
-    
-    $("#test-button").click(function(){
-        $.state.generationState.foundHeroes = [];
-        shuffleArray($.state.cards.heroes)
-        $.state.generationState.foundHeroes.push($.state.cards.heroes[0]);
-        //remove hero from array
-        while ($.state.generationState.foundHeroes.length < 5){
-            shuffleArray($.state.cards.heroes)
-            $.state.generationState.foundHeroes.push($.state.cards.heroes[0]);
-        }
-        var resultText = $.state.generationState.foundHeroes.reduce((a, c, i) => `${a}${i == 0 ? "" : ", "}${c.name}`, "");
-        $("#results").text(resultText);
-        //test();
-    })
-});
-
-
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-}
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
